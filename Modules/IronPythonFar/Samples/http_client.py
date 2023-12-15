@@ -17,9 +17,9 @@ print(data1)
 conn.request("GET", "/")
 r1 = conn.getresponse()
 while True:
-    chunk = r1.read(100)
-    if not chunk:
-        break
-    print(repr(chunk))
+    if chunk := r1.read(100):
+        print(repr(chunk))
 
+    else:
+        break
 conn.close()

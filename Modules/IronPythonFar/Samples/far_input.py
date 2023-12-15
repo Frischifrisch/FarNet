@@ -1,5 +1,4 @@
 ﻿# The variable `far` is predefined.
 
-res = far.Input('Enter your name')
-if res:
+if res := far.Input('Enter your name'):
     far.Message(res, 'Hello')
