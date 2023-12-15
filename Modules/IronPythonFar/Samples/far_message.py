@@ -7,7 +7,7 @@ from FarNet import *
 from System import *
 
 args = MessageArgs()
-args.Text = 'from:' + __file__ + __name__
+args.Text = f'from:{__file__}{__name__}'
 args.Caption = 'Hello'
 args.Buttons = Array[str](['&Ready', '&Steady', '&Go'])
 
